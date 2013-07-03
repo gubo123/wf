@@ -1,0 +1,31 @@
+﻿@model Workflow.Models.Person
+
+@{
+    
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.Title</h2>
+<br />
+<h2>@ViewBag.Message</h2>
+
+<a href=@Url.Action("About")>About</a>
+
+<table>
+    <tr>
+        <th>이름</th>
+        <th>나이</th>
+    </tr>
+    <tr>    
+        <td>@Model.name</td>
+        <td>@Model.age</td>
+    </tr>
+</table>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(m => m.name);
+    @Html.EditorFor(m => m.age);  
+}
+
+
