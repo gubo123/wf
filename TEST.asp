@@ -1,0 +1,1 @@
+<% Response.write "TEST" %>
