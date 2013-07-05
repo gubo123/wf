@@ -55,9 +55,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -123,6 +120,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -130,6 +128,33 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="Bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="Bootstrap\css\bootstrap.css" />
+    <Content Include="Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="Bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="Bootstrap\js\application.js" />
+    <Content Include="Bootstrap\js\bootstrap-affix.js" />
+    <Content Include="Bootstrap\js\bootstrap-alert.js" />
+    <Content Include="Bootstrap\js\bootstrap-button.js" />
+    <Content Include="Bootstrap\js\bootstrap-carousel.js" />
+    <Content Include="Bootstrap\js\bootstrap-collapse.js" />
+    <Content Include="Bootstrap\js\bootstrap-dropdown.js" />
+    <Content Include="Bootstrap\js\bootstrap-modal.js" />
+    <Content Include="Bootstrap\js\bootstrap-popover.js" />
+    <Content Include="Bootstrap\js\bootstrap-scrollspy.js" />
+    <Content Include="Bootstrap\js\bootstrap-tab.js" />
+    <Content Include="Bootstrap\js\bootstrap-tooltip.js" />
+    <Content Include="Bootstrap\js\bootstrap-transition.js" />
+    <Content Include="Bootstrap\js\bootstrap-typeahead.js" />
+    <Content Include="Bootstrap\js\bootstrap.js" />
+    <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Bootstrap\js\google-code-prettify\prettify.css" />
+    <Content Include="Bootstrap\js\google-code-prettify\prettify.js" />
+    <Content Include="Bootstrap\js\holder\holder.js" />
+    <Content Include="Bootstrap\js\html5shiv.js" />
+    <Content Include="Bootstrap\js\jquery.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -225,6 +250,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\About.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Main\Default.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

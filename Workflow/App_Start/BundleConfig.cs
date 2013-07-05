@@ -38,6 +38,9 @@ namespace Workflow
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
+            bundles.Add(new ScriptBundle("~/Bootstrap/js").Include("~/Bootstrap/js/bootstrap.js"));
+            bundles.Add(new StyleBundle("~/Bootstrap/css").Include("~/Bootstrap/css/bootstrap.css"));
         }
     }
 }
